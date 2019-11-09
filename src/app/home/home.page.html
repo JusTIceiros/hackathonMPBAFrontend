@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Mapa de denúncias
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-row>
+          <ion-col>
+              <ion-item>
+                  <ion-label>Tipo de denúncia</ion-label>
+                  <ion-select placeholder="Selecione um">
+                      <ion-select-option value="f">Todos</ion-select-option>
+                    <ion-select-option value="f">Violência contra mulher</ion-select-option>
+                    <ion-select-option value="m">Tráfico de drogas</ion-select-option>
+                    <ion-select-option value="m">Homicídio</ion-select-option>
+                    <ion-select-option value="m">Crimes contra patrimônio</ion-select-option>
+                  </ion-select>
+                </ion-item>
+          </ion-col>
+          <ion-col>
+              <ion-item>
+                  <ion-label>Município</ion-label>
+                  <ion-select placeholder="Selecione um">
+                      <ion-select-option value="f">Todos</ion-select-option>
+                    <ion-select-option value="f">Salvador</ion-select-option>
+                    <ion-select-option value="m">Lauro de Freitas</ion-select-option>
+                    <ion-select-option value="m">Simões Filho</ion-select-option>
+                    <ion-select-option value="m">Feira de Santana</ion-select-option>
+                  </ion-select>
+                </ion-item>
+          </ion-col>
+        
+        </ion-row>
+        <ion-row>
+          <ion-col>
+              <ion-button color="primary"(click)="getMap()">Consulta</ion-button>
+          </ion-col>
+        </ion-row>
+        </ion-grid>
+
+    <ion-card>
+      <!-- <img src="/assets/logo-mp.svg" alt="" /> -->
+      <img  [src]="mapUrl" alt="" />
+
+      <!-- <img style="width:400px;height:400px;" [src]="sanitize(mapUrl)" /> -->
+    
+
+    </ion-card>
+
+</ion-content>

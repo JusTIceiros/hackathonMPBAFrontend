@@ -1,0 +1,10 @@
+{
+  "name": "mpba",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "gulp":{
+    "enabled":false
+  }
+}
